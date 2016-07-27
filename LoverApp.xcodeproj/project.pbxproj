@@ -12,6 +12,8 @@
 		015C746B1D4736F300D10C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015C74691D4736F300D10C9A /* Main.storyboard */; };
 		015C746D1D4736F300D10C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015C746C1D4736F300D10C9A /* Assets.xcassets */; };
 		015C74701D4736F300D10C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015C746E1D4736F300D10C9A /* LaunchScreen.storyboard */; };
+		015C747A1D484BED00D10C9A /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C74791D484BED00D10C9A /* SecViewController.swift */; };
+		015C747C1D48874C00D10C9A /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C747B1D48874C00D10C9A /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		015C746C1D4736F300D10C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		015C746F1D4736F300D10C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		015C74711D4736F300D10C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015C74791D484BED00D10C9A /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
+		015C747B1D48874C00D10C9A /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				015C74651D4736F300D10C9A /* AppDelegate.swift */,
 				015C74671D4736F300D10C9A /* ViewController.swift */,
+				015C74791D484BED00D10C9A /* SecViewController.swift */,
+				015C747B1D48874C00D10C9A /* EditViewController.swift */,
 				015C74691D4736F300D10C9A /* Main.storyboard */,
 				015C746C1D4736F300D10C9A /* Assets.xcassets */,
 				015C746E1D4736F300D10C9A /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015C747C1D48874C00D10C9A /* EditViewController.swift in Sources */,
 				015C74681D4736F300D10C9A /* ViewController.swift in Sources */,
 				015C74661D4736F300D10C9A /* AppDelegate.swift in Sources */,
+				015C747A1D484BED00D10C9A /* SecViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +303,7 @@
 				015C74761D4736F300D10C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
