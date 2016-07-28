@@ -108,7 +108,7 @@
             </objects>
             <point key="canvasLocation" x="1789.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--Edit-->
         <scene sceneID="pL6-lX-FPS">
             <objects>
                 <viewController storyboardIdentifier="viewcontroller3" id="9Lg-SQ-V90" customClass="EditViewController" customModule="LoverApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -156,18 +156,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="6HB-kj-La6">
-                        <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="hwI-sw-C0O">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TPg-y0-KET">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="DoneButton:" destination="9Lg-SQ-V90" eventType="touchUpInside" id="Tha-6Z-qFX"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Edit" id="6HB-kj-La6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="7zK-3S-hh1"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
