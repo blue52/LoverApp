@@ -14,6 +14,7 @@
 		015C74701D4736F300D10C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015C746E1D4736F300D10C9A /* LaunchScreen.storyboard */; };
 		015C747A1D484BED00D10C9A /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C74791D484BED00D10C9A /* SecViewController.swift */; };
 		015C747C1D48874C00D10C9A /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C747B1D48874C00D10C9A /* EditViewController.swift */; };
+		01F114131D55DE4E00385CC4 /* lover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F114121D55DE4E00385CC4 /* lover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		015C74711D4736F300D10C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015C74791D484BED00D10C9A /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
 		015C747B1D48874C00D10C9A /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		01F114121D55DE4E00385CC4 /* lover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 		015C74641D4736F300D10C9A /* LoverApp */ = {
 			isa = PBXGroup;
 			children = (
+				015C74691D4736F300D10C9A /* Main.storyboard */,
 				015C74651D4736F300D10C9A /* AppDelegate.swift */,
+				01F114121D55DE4E00385CC4 /* lover.swift */,
 				015C74671D4736F300D10C9A /* ViewController.swift */,
 				015C74791D484BED00D10C9A /* SecViewController.swift */,
 				015C747B1D48874C00D10C9A /* EditViewController.swift */,
-				015C74691D4736F300D10C9A /* Main.storyboard */,
 				015C746C1D4736F300D10C9A /* Assets.xcassets */,
 				015C746E1D4736F300D10C9A /* LaunchScreen.storyboard */,
 				015C74711D4736F300D10C9A /* Info.plist */,
@@ -148,6 +151,7 @@
 				015C74681D4736F300D10C9A /* ViewController.swift in Sources */,
 				015C74661D4736F300D10C9A /* AppDelegate.swift in Sources */,
 				015C747A1D484BED00D10C9A /* SecViewController.swift in Sources */,
+				01F114131D55DE4E00385CC4 /* lover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

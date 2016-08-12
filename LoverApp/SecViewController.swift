@@ -9,43 +9,71 @@
 import UIKit
 
 class SecViewController: UIViewController {
+    
     var name:String!
     var sign:String!
-    var newImage:UIImage?
-    var updateData:String?
-    //var girlImage = ["one": "lin.jpg", "two": "gal.jpg"]
+    var girlImage:String!
+    var loverNumber:Int!
+    
     
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var signLabel: UILabel!
-    
     @IBOutlet weak var imageforgirl: UIImageView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.nameLabel.text = name
-        self.signLabel.text = sign
-        self.imageforgirl.image = newImage
-        //self.imageforgirl.image = UIImage(named: girlImage["one"]!) ditionary實作上有問題
-        let notificationName = Notification.Name("GetUpdateNoti")
-        NotificationCenter.default.addObserver(self, selector: #selector(SecViewController.getUpdateNoti(noti:)), name: notificationName, object: nil)
+    
+    @IBAction func pressedEditButton(_ sender: AnyObject) {
         
     }
 
+    func upload(noti:Notification){
+        let newname = noti.userInfo!["name"] as! String
+        let newsign = noti.userInfo!["sign"] as! String
+        //let newnumber = noti.userInfo?["number"] as! Int
+        //let NewImage = noti.userInfo!["showimage"] as! String
+        //self.loverNumber = newnumber
+        self.nameLabel.text = newname
+        self.signLabel.text = newsign
+        //self.imageforgirl.image = UIImage(named: NewImage)
+    }
+    
+        override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        if let newname = name{
+            nameLabel.text = newname
+            //self.title = newname
+        }
+        if let newsign = sign{
+            signLabel.text = newsign
+        }
+        if let newImage = girlImage{
+            imageforgirl.image = UIImage(named: newImage)//少了這行，圖片不會出現。
+        }
+        let NotiName = Notification.Name("update")
+        NotificationCenter.default.addObserver(self, selector: #selector(upload(noti:)), name: NotiName, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        //self.nameLabel.text = updateData
-//    }
-    func getUpdateNoti(noti:Notification){
-        let newname = noti.userInfo!["name"] as! String
-        let signName = noti.userInfo!["sign"] as! String
-        self.nameLabel.text = newname
-        self.signLabel.text = signName
-    }
 
+
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        let controller = segue.destination as! EditViewController
+        controller.name = name
+        controller.sign = sign
+        controller.loverNumber = loverNumber
+        //controller.girlImage = girlImage
+        
+    }//將值傳回下一頁文字框的連結
+    
 
 }
