@@ -27,9 +27,9 @@ class SecViewController: UIViewController {
     func upload(noti:Notification){
         let newname = noti.userInfo!["name"] as! String
         let newsign = noti.userInfo!["sign"] as! String
-        //let newnumber = noti.userInfo?["number"] as! Int
-        //let NewImage = noti.userInfo!["showimage"] as! String
-        //self.loverNumber = newnumber
+        
+        self.name = newname //這二個name、sign屬性要建立，否則無法更新資料
+        self.sign = newsign
         self.nameLabel.text = newname
         self.signLabel.text = newsign
         //self.imageforgirl.image = UIImage(named: NewImage)
@@ -40,6 +40,7 @@ class SecViewController: UIViewController {
         
         
         if let newname = name{
+            
             nameLabel.text = newname
             //self.title = newname
         }

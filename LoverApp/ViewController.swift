@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         thirdgirlButton.setTitle(girlC.name, for: [])
         //將button的名稱傳入自訂的愛人名字
         
-        
     }
     
     func upload(noti:Notification){
