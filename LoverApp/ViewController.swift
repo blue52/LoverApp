@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var secgirlButton: UIButton!
     @IBOutlet weak var thirdgirlButton: UIButton!
     
-        
     var girlA = lover(loverNumber:0, name: "林志玲", sign: "射手座", girlImage: "lin.jpg")
     var girlB = lover(loverNumber:1, name: "Gal Gadot", sign: "金牛座", girlImage: "gal.jpg")
     var girlC = lover(loverNumber:2, name: "lily collins", sign: "雙魚座", girlImage: "lily.jpg")

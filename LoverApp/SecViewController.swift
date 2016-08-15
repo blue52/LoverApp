@@ -54,9 +54,6 @@ class SecViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(upload(noti:)), name: NotiName, object: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
 
     
     override func didReceiveMemoryWarning() {

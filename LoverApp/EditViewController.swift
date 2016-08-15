@@ -58,7 +58,6 @@ class EditViewController: UIViewController, UITextFieldDelegate, UINavigationCon
         
     }*/
 
-    
     func upload(_ sender:AnyObject){
         
         let NotiName = Notification.Name("update")
